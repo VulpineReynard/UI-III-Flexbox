@@ -28,7 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 }
 ol, ul {
-	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -88,14 +87,14 @@ header nav.links {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	width: 70%;
+	width: 80%;
 	height: 100%;
 	padding-left: 15px;
 }
 
 header .logo{
-	margin-left: 15%;
-	align-self: flex-end;
+	position: relative;
+	
 }
 
 header nav.links a {
@@ -210,6 +209,8 @@ footer {
 }
 /*----------------------------------*/
 
+
+/*-----------SERVICE SECTION------------*/
 .servicesMasthead {
 	padding-top: 70px;
 	display: flex;
@@ -220,7 +221,6 @@ footer {
 	border-bottom-right-radius: 10px;
 	align-self: auto;
 }
-
 .servicesIntro {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -228,13 +228,71 @@ footer {
 	flex-direction: column;
 	border-bottom: 2px solid black;
 }
-
 .servicesIntro h2 {
 	font-size: 30px;
 }
 
+/*------------SERVICES SECTION------------*/
 .serviceOptions {
 	padding-top: 30px;
+	border-bottom: 2px solid black;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+/*---CHANGES PROPERTIES FOR ALL DIVS IN SECTION----*/
+section.serviceOptions div {
+	width: 47%;
+	height: auto;
+	border: 2px solid black;
+	flex-direction: column;
+	background-color: lightgrey;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+section.serviceOptions div button { /*"Learn More" Buttons*/
+	margin-top: 15px;
+	border-radius: 4px;
+	border: 1px solid black;
+	background-color: white;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+section.serviceOptions .rightBox {
+	margin-left: 6%;
+}
+/*-------------------------------------------------*/
+
+section.someFactsContainer {
+	display: flex;
+	flex-direction: row;
+	padding-top: 30px;
+}
+div.someFacts {
+	width: 47%;
+	height: auto;
+	flex-direction: column;
+}
+
+section.someFacts p {
+	padding-bottom: 20px;
+}
+
+/*----PROPERTIES OF LIST----*/
+div.someFacts div {
+	margin-top: 30px;
+	padding-left: 17px;
+}
+#listOfThings {
+	margin-top: 20px;
+}
+ul.listOfThings li {
+	padding-top: 10px;
+}
+/*--------------------------*/
+
+.services-info-img {
+	width: 47%;
+	margin-left: 6%;
 }
