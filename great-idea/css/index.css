@@ -77,7 +77,8 @@ h1 {
 
 /*---------HEADER----------*/
 header {
-	display: flexbox;
+	display: flex;
+	align-items: center;
 	height: 8%;
 	width: 64%;
 	background-color: lightblue;
@@ -86,23 +87,21 @@ header {
 	position: fixed;
 }
 
+
 header nav.links {
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	width: 70%;
 	height: 100%;
 	padding-left: 15px;
 }
 
 header .logo{
-	padding: 5px;
-	border: 3px dotted grey;
-	border-radius: 8px;
-	background-color: cadetblue;
+	margin-left: 10%;
 }
 
 header nav.links a {
-	padding-top: 3.7%;
 	text-decoration: none;
 	font-size: 17px;
 	color: darkgrey;
