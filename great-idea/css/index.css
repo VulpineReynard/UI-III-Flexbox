@@ -29,7 +29,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
 }
 ol, ul {
 	list-style: none;
@@ -53,8 +56,11 @@ table {
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	width: 80%;
+	font-family: 'Titillium Web', sans-serif;
+	align-content: center;
+	margin: auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,4 +69,147 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+h1 {
+	font-size: 80px;
+}
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*---------HEADER----------*/
+header {
+	display: flexbox;
+	height: 8%;
+	width: 64%;
+	background-color: lightblue;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: fixed;
+}
+
+header nav.links {
+	display: flex;
+	justify-content: space-evenly;
+	width: 70%;
+	height: 100%;
+	padding-left: 15px;
+}
+
+header .logo{
+	padding: 5px;
+	border: 3px dotted grey;
+	border-radius: 8px;
+	background-color: cadetblue;
+}
+
+header nav.links a {
+	padding-top: 3.7%;
+	text-decoration: none;
+	font-size: 17px;
+	color: darkgrey;
+	transition: transform 0.5s;
+}
+
+header nav.links a:hover {
+	transform: scale(1.5);
+}
+/*--------------------------*/
+
+/*----------MASTHEAD-----------*/
+.masthead {
+	display: flex;
+	padding-top: 70px;
+	padding-bottom: 60px;
+	border-bottom: 2px solid black;
+}
+
+.masthead div.innovation {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 70px;
+	text-align: center;
+}
+
+.masthead div.innovation a {
+	text-decoration: none;
+	transition: transform 0.5s;
+	background-color: grey;
+	width: 29%;
+	height: 10%;
+	color: white;
+	align-self: center;
+	border-radius: 8px;
+}
+
+.masthead div.innovation a:hover {
+	transform: scale(1.5);
+}
+
+.masthead img {
+	align-self: flex-end;
+}
+/*-------------------------------*/
+
+/*------------UPPER CONENT--------------*/
+section.upperContent {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+section.upperContent div.features {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+section.upperContent div.about {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+/*--------------------------------------*/
+
+/*-------------LOWER CONTENT------------*/
+section.bottomContent {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid black;
+}
+
+section.bottomContent div.services {
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+section.bottomContent div.product {
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+section.bottomContent div.vision {
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+/*---------------------------------------*/
+
+/*--------------FOOTER------------- */
+footer {
+	padding-top: 40px;
+}
+
+#copyright {
+	padding-top: 75px;
+	padding-bottom: 175px;
+	text-align: center;
+}
+/*----------------------------------*/
