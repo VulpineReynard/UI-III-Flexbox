@@ -26,13 +26,8 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
 }
 ol, ul {
-	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -53,8 +48,14 @@ table {
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	width: 80%;
+	font-family: 'Titillium Web', sans-serif;
+	align-content: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,4 +64,235 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+h1 {
+	font-size: 80px;
+}
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*---------HEADER----------*/
+header {
+	display: flex;
+	align-items: center;
+	height: 8%;
+	width: 64%;
+	background-color: lightblue;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: fixed;
+}
+
+
+header nav.links {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 80%;
+	height: 100%;
+	padding-left: 15px;
+}
+
+header .logo{
+	position: relative;
+	
+}
+
+header nav.links a {
+	text-decoration: none;
+	font-size: 17px;
+	color: white;
+	transition: transform 0.5s;
+}
+
+header nav.links a:hover {
+	transform: scale(1.5);
+}
+/*--------------------------*/
+
+/*----------MASTHEAD-----------*/
+.masthead {
+	display: flex;
+	padding-top: 70px;
+	padding-bottom: 60px;
+	border-bottom: 2px solid black;
+}
+
+.masthead div.innovation {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 70px;
+	text-align: center;
+}
+
+.masthead div.innovation a {
+	text-decoration: none;
+	transition: transform 0.5s;
+	background-color: grey;
+	width: 29%;
+	height: 10%;
+	color: white;
+	align-self: center;
+	border-radius: 8px;
+}
+
+.masthead div.innovation a:hover {
+	transform: scale(1.5);
+}
+
+.masthead img {
+	align-self: flex-end;
+}
+/*-------------------------------*/
+
+/*------------UPPER CONENT--------------*/
+section.upperContent {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+section.upperContent div.features {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+section.upperContent div.about {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+/*--------------------------------------*/
+
+/*-------------LOWER CONTENT------------*/
+section.bottomContent {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid black;
+}
+
+section.bottomContent div.services {
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+section.bottomContent div.product {
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+section.bottomContent div.vision {
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+/*---------------------------------------*/
+
+/*--------------FOOTER------------- */
+footer {
+	padding-top: 40px;
+}
+
+#copyright {
+	padding-top: 75px;
+	padding-bottom: 175px;
+	text-align: center;
+}
+/*----------------------------------*/
+
+
+/*-----------SERVICE SECTION------------*/
+.servicesMasthead {
+	padding-top: 70px;
+	display: flex;
+	flex-direction: column;
+}
+.services-header-img {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	align-self: auto;
+}
+.servicesIntro {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid black;
+}
+.servicesIntro h2 {
+	font-size: 30px;
+}
+
+/*------------SERVICES SECTION------------*/
+.serviceOptions {
+	padding-top: 30px;
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*---CHANGES PROPERTIES FOR ALL DIVS IN SECTION----*/
+section.serviceOptions div {
+	width: 47%;
+	height: auto;
+	border: 2px solid black;
+	flex-direction: column;
+	background-color: lightgrey;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+section.serviceOptions div button { /*"Learn More" Buttons*/
+	margin-top: 15px;
+	border-radius: 4px;
+	border: 1px solid black;
+	background-color: white;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+section.serviceOptions .rightBox {
+	margin-left: 6%;
+}
+/*-------------------------------------------------*/
+
+section.someFactsContainer {
+	display: flex;
+	flex-direction: row;
+	padding-top: 30px;
+}
+div.someFacts {
+	width: 47%;
+	height: auto;
+	flex-direction: column;
+}
+
+section.someFacts p {
+	padding-bottom: 20px;
+}
+
+/*----PROPERTIES OF LIST----*/
+div.someFacts div {
+	margin-top: 30px;
+	padding-left: 17px;
+}
+#listOfThings {
+	margin-top: 20px;
+}
+ul.listOfThings li {
+	padding-top: 10px;
+}
+/*--------------------------*/
+
+.services-info-img {
+	width: 47%;
+	margin-left: 6%;
+}
